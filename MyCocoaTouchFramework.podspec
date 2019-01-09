@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MyCocoaTouchFramework"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "This is a podspec for a Cocoa Touch Framework created with Xcode."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/luz-ams/pods-configuration-sample.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/luz-ams/podsample-mycocoatouchframework.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
