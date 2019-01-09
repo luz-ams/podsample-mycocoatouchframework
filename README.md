@@ -1,0 +1,1 @@
+# podsample-mycocoatouchframework
