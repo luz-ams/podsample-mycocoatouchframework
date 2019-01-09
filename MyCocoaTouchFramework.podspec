@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   The structure should help to modularize your App.
                    DESC
 
-  s.homepage     = "https://github.com/luz-ams/pods-configuration-sample"
+  s.homepage     = "https://github.com/luz-ams/podsample-mycocoatouchframework"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/luz-ams/pods-configuration-sample.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/luz-ams/podsample-mycocoatouchframework.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
