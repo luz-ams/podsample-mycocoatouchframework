@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MyCocoaTouchFramework"
-  s.version      = "0.0.3"
+  s.version      = "1.0.0"
   s.summary      = "This is a podspec for a Cocoa Touch Framework created with Xcode."
 
   # This description is used to generate tags and improve search results.
