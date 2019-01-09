@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   The structure should help to modularize your App.
                    DESC
 
-  s.homepage     = "https://github.com/luz-ams/pods-configuration-sample"
+  s.homepage     = "https://github.com/luz-ams/podsample-mycocoatouchframework"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "MyCocoaTouchFramework/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
