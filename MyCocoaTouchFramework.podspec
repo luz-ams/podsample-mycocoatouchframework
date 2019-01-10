@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MyCocoaTouchFramework"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "This is a podspec for a Cocoa Touch Framework created with Xcode."
 
   # This description is used to generate tags and improve search results.
@@ -67,6 +67,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
+  s.swift_version = '4.2'
+
   #  When using multiple platforms
   s.ios.deployment_target = "12.0"
   # s.osx.deployment_target = "10.7"
@@ -91,7 +93,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "MyCocoaTouchFramework/**/*.{h,m}"
+  s.source_files  = "MyCocoaTouchFramework/**/*.{swift}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
