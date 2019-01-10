@@ -9,9 +9,9 @@
 import Foundation
 
 extension UIImageView {
+    
     public func rounded() {
-        let radius = self.frame.width / 2
-        self.layer.cornerRadius = radius
-        self.layer.masksToBounds = true
+        self.layer.cornerRadius = self.frame.size.height / 2
+        self.clipsToBounds = true
     }
 }

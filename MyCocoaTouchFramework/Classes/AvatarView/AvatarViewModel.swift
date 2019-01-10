@@ -10,10 +10,8 @@ import Foundation
 
 public struct AvatarViewModel {
     var imageName: String
-    var size: CGFloat
     
-    init(imageName: String, size: CGFloat? = 100) {
+    public init(imageName: String) {
         self.imageName = imageName
-        self.size = size ?? 100
     }
 }

@@ -4,36 +4,48 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AvatarView" customModule="MyCocoaTouchFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="VQg-kQ-Glk" id="z3J-Ox-u0b"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AvatarView" customModule="MyCocoaTouchFramework" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="357" height="422"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="389"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VQg-kQ-Glk">
-                    <rect key="frame" x="128.5" y="161" width="100" height="100"/>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="YZ8-QD-oEA">
+                    <rect key="frame" x="0.0" y="0.0" width="447" height="389"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="VQg-kQ-Glk">
+                            <rect key="frame" x="0.0" y="0.0" width="389" height="389"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="VQg-kQ-Glk" secondAttribute="height" multiplier="1:1" id="LVa-g4-ylc"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="100" id="AcB-r5-9LJ"/>
-                        <constraint firstAttribute="width" secondItem="VQg-kQ-Glk" secondAttribute="height" multiplier="1:1" id="yFb-1d-0jF"/>
+                        <constraint firstAttribute="bottom" secondItem="VQg-kQ-Glk" secondAttribute="bottom" priority="750" id="2yN-9y-fHn"/>
+                        <constraint firstItem="VQg-kQ-Glk" firstAttribute="top" secondItem="YZ8-QD-oEA" secondAttribute="top" id="3i1-4L-hwJ"/>
+                        <constraint firstItem="VQg-kQ-Glk" firstAttribute="leading" secondItem="YZ8-QD-oEA" secondAttribute="leading" id="rbM-od-vxQ"/>
+                        <constraint firstAttribute="trailing" secondItem="VQg-kQ-Glk" secondAttribute="trailing" priority="750" id="zO4-Pq-ryn"/>
                     </constraints>
-                </imageView>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="VQg-kQ-Glk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lRk-qn-xas"/>
-                <constraint firstItem="VQg-kQ-Glk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vFb-1q-P7X"/>
+                <constraint firstItem="YZ8-QD-oEA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8Vn-pE-lXh"/>
+                <constraint firstItem="YZ8-QD-oEA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="F7F-q8-9fA"/>
+                <constraint firstAttribute="bottom" secondItem="YZ8-QD-oEA" secondAttribute="bottom" id="MHP-93-jQ3"/>
+                <constraint firstAttribute="trailing" secondItem="YZ8-QD-oEA" secondAttribute="trailing" id="eUJ-Rc-sFZ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="imageView" destination="VQg-kQ-Glk" id="zPX-og-D3P"/>
-                <outlet property="sizeConstraint" destination="AcB-r5-9LJ" id="qqs-Gi-746"/>
-            </connections>
-            <point key="canvasLocation" x="98" y="96"/>
+            <point key="canvasLocation" x="520.79999999999995" y="-16.641679160419791"/>
         </view>
     </objects>
 </document>

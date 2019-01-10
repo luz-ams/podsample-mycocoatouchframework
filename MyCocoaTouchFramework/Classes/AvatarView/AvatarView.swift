@@ -7,18 +7,30 @@
 //
 
 import Foundation
+import Reusable
 
-public class AvatarView: UIView {
+public class AvatarView: UIView, NibOwnerLoadable {
     
     // MARK: Outlets
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var sizeConstraint: NSLayoutConstraint!
-    
+
     // MARK: Public Properties
     public var model: AvatarViewModel? {
         didSet {
-            loadData()
+            self.loadData()
         }
+    }
+
+    // MARK: Initializers / Deinitializers
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.loadNibContent()
+    }
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        imageView.rounded()
+        setNeedsLayout()
     }
     
     // MARK: Private Functions
@@ -26,8 +38,5 @@ public class AvatarView: UIView {
         guard let model = self.model else { return }
     
         imageView.image = UIImage(named: model.imageName)
-        imageView.rounded()
-        
-        sizeConstraint.constant = model.size
     }
 }
